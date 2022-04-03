@@ -122,7 +122,3 @@ class HeapProfile(unittest.TestCase):
                     for method_name, total_time, cumulative_time, per_call_time in \
                             HeapProfile.get_running_times(st, '_push_down'):
                         HeapProfile.write_row(f, 'heap', b, method_name, total_time, cumulative_time, per_call_time)
-
-
-if __name__ == '__main__':
-    unittest.main()

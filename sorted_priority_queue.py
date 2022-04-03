@@ -210,28 +210,3 @@ class Treap:
         right_height = self.max_height_inner(node.right)
 
         return 1 + max(left_height, right_height)
-
-
-
-if __name__ == "__main__":
-    inventory = Treap()
-    
-    inventory.insert(10, 3)
-    inventory.insert(5, 23)
-    inventory.insert(15, 21)
-    inventory.insert(7, 56)
-    inventory.insert(4, 34)
-    inventory.insert(3, 44)
-    inventory.insert(17, 54)
-    inventory.insert(12, 8)
-    inventory.insert(2, 4)
-    inventory.insert(1, 2)
-    
-
-    print(f"Inventory min is {inventory.min()}")
-    print(f"Inventory max is {inventory.max()}")
-
-    print(f"b is contained {inventory.contains(3)}")
-    print(f"g is contained {inventory.contains(2)}")
-
-    print(f"Treap height is {inventory.max_height()}")

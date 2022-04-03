@@ -127,28 +127,3 @@ class DHeap:
         else:
             self.pairs = list(pairs)
             self.__heapify()
-
-heap = DHeap()
-
-heap.insert("something", 5)
-heap.insert("something else", 3)
-heap.insert("si je ti", 8)
-heap.insert("une mire", 10)
-heap.insert("po ti si je", 4)
-heap.insert("po ti si je 3", 20)
-heap.insert("po ti si je", 9)
-heap.insert("po ti si je", 9)
-
-print([el.priority for el in heap.pairs])
-
-# print(format(heap.top()))
-# print(format(heap.top()))
-
-# top_calls = [lambda h: h.top()] * 9
-# for i in top_calls:
-#     print(format(i(heap)))
-
-heap.update("po ti si je", 22)
-heap.update("po ti si je 3", 50)
-
-print([el.priority for el in heap.pairs])

@@ -15,11 +15,3 @@ class Math:
             )
             val_without_curr = Math.knap_sack(max_weight, weights, values, index - 1)
             return max(val_with_curr, val_without_curr)
-
-
-val = [100, 60, 120]
-wt = [20, 10, 30]
-W = 50
-n = len(val)
-
-print(Math.knap_sack(W, wt, val, n - 1))
